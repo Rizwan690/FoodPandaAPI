@@ -15,7 +15,8 @@ proxyDict = [
 async def foodpanda(phone):
 
     if phone.startswith('COUNTRY_CODE'):
-        filter_phone = phone[2:] # It will replace first two digits of your country code
+        filter_phone = phone[2:] # It will replace first two digits of your country code. You can change it depends on your country code if your country code is 3 digit just replace [2:] with [3:]
+        
     else:
         filter_phone = phone
 
